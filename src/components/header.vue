@@ -44,6 +44,7 @@ $distance: 8px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .header {
   position: fixed;
+  z-index: +10;
   top: 0;
   width: 100%;
   display: flex;

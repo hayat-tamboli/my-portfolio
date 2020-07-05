@@ -20,6 +20,7 @@
     <img
       src="../assets/undraw_web_developer_p3e5.svg"
       alt="web developer"
+      id="web-dev-img"
       width="50%"
     />
   </div>
@@ -52,6 +53,15 @@ export default {
     position: absolute;
     right: 3rem;
     top: 8rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #web-dev-img {
+    display: none;
+  }
+  .text-area {
+    text-align: center;
+    align-items: center;
   }
 }
 </style>

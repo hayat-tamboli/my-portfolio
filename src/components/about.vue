@@ -12,7 +12,7 @@
 
     <p>
       got any questions?
-      <router-link to="/">Contact me.</router-link>
+      <a href="#contact">Contact me.</a>
     </p>
   </div>
 </template>
@@ -41,10 +41,14 @@ $blue: #2257ea;
       color: $blue;
     }
   }
+  h1 {
+    text-align: center;
+  }
 }
 #hi {
   animation: shake 0.5s infinite ease-in-out alternate;
   display: inline-block;
+  z-index: 0;
 }
 @keyframes shake {
   from {

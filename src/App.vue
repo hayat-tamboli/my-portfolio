@@ -3,19 +3,22 @@
     <Header></Header>
     <Home></Home>
     <About></About>
+    <Portfolio></Portfolio>
   </div>
 </template>
 
 <script>
 import Header from "./components/header";
 import Home from "./components/home";
-import About from "./components/about"
+import About from "./components/about";
+import Portfolio from "./components/portfolio";
 export default {
   name: "App",
   components: {
     Header,
     Home,
-    About
+    About,
+    Portfolio
   }
 };
 </script>
@@ -50,7 +53,7 @@ button {
   }
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   }
   transition: all 0.2s ease-in-out;
 }

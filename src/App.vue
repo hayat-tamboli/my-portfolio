@@ -4,6 +4,8 @@
     <Home></Home>
     <About></About>
     <Portfolio></Portfolio>
+    <Skills></Skills>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -12,13 +14,17 @@ import Header from "./components/header";
 import Home from "./components/home";
 import About from "./components/about";
 import Portfolio from "./components/portfolio";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
 export default {
   name: "App",
   components: {
     Header,
     Home,
     About,
-    Portfolio
+    Portfolio,
+    Skills,
+    Contact
   }
 };
 </script>

@@ -37,6 +37,7 @@ export default {
   align-items: center;
   overflow: hidden;
   padding: 0 3rem;
+  min-height: 100vh;
   h1 {
     font-weight: 900;
   }

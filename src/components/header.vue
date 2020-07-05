@@ -43,10 +43,15 @@ $duration: 0.2s;
 $distance: 8px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 1.3rem 3rem;
+  justify-content: space-around;
+  padding: 1rem 0rem;
   align-items: center;
+  background: #f7f7f785;
+  backdrop-filter: blur(8px);
   .logo {
     a {
       color: $blue;

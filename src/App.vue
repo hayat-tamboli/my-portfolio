@@ -2,17 +2,20 @@
   <div id="app">
     <Header></Header>
     <Home></Home>
+    <About></About>
   </div>
 </template>
 
 <script>
 import Header from "./components/header";
 import Home from "./components/home";
+import About from "./components/about"
 export default {
   name: "App",
   components: {
     Header,
-    Home
+    Home,
+    About
   }
 };
 </script>
@@ -28,6 +31,7 @@ $secondarycolor: #213059;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: $secondarycolor;
+  scroll-behavior: smooth;
 }
 #app {
   background: $lightgrey;
@@ -44,5 +48,10 @@ button {
     text-decoration: none;
     font-size: 1.2rem;
   }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  transition: all 0.2s ease-in-out;
 }
 </style>

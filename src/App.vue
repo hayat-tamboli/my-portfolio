@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Header></Header>
+    <Home></Home>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Header from "./components/header";
+import Home from "./components/home";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    Header,
+    Home
   }
 };
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$blue: #2257ea;
+$lightgrey: #f7f7f7;
+$secondarycolor: #213059;
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: $secondarycolor;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: $lightgrey;
+}
+button {
+  border: none;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 18px;
+  outline: none;
+  width: fit-content;
+  a {
+    color: $lightgrey;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
 }
 </style>

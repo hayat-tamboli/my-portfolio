@@ -7,6 +7,7 @@
     <Portfolio></Portfolio>
     <Skills></Skills>
     <Contact></Contact>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 export default {
   name: "App",
   components: {
@@ -25,7 +27,8 @@ export default {
     About,
     Portfolio,
     Skills,
-    Contact
+    Contact,
+    Footer
   }
 };
 </script>

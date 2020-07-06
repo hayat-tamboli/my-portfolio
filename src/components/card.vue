@@ -1,14 +1,25 @@
 <template>
   <div class="card">
     <div class="img">
-      <img :src="img_source" alt style="border-radius: 6px 6px 0 0" width="300px" />
+      <img
+        :src="img_source"
+        alt
+        style="border-radius: 6px 6px 0 0"
+        width="300px"
+      />
     </div>
     <div class="card-text">
       <h2>{{ main }}</h2>
       <h5 id="description">{{ desc }}</h5>
       <div class="card-btns">
-        <button class="card-btns-items" style="background: #333333 "><a :href="gitlink" style="font-size:1rem" target="_blank">Github repo</a></button>
-        <button class="card-btns-items" style="background: #2257ea "><a :href="weblink" style="font-size:1rem" target="_blank">website</a></button>
+        <button class="card-btns-items" style="background: #333333 ">
+          <a :href="gitlink" style="font-size:1rem" target="_blank"
+            >Github repo</a
+          >
+        </button>
+        <button class="card-btns-items" style="background: #2257ea ">
+          <a :href="weblink" style="font-size:1rem" target="_blank">website</a>
+        </button>
       </div>
     </div>
   </div>

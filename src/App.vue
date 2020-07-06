@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <VueScrollProgress></VueScrollProgress>
     <Header></Header>
     <Home></Home>
     <About></About>
@@ -24,8 +25,8 @@ export default {
     About,
     Portfolio,
     Skills,
-    Contact
-  }
+    Contact,
+  },
 };
 </script>
 
@@ -41,6 +42,25 @@ $secondarycolor: #213059;
   font-family: "Poppins", sans-serif;
   color: $secondarycolor;
   scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  color: $blue;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  color: $lightgrey;
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background: $blue;
+}
+#progress-el {
+  /* progress bar */
+  background-color: $blue !important;
 }
 #app {
   background: $lightgrey;

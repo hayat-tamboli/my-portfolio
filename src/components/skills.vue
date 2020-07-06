@@ -41,6 +41,12 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .progress-bar {
+    width: 20rem;
   }
 }
 </style>

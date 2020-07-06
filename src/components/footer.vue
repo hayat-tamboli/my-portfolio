@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>Footer</h1>
-  </div>
+  <div id="footer">© Hayat Tamboli | Made with 💙 by Hayat Tamboli</div>
 </template>
 
 <script>
@@ -10,4 +8,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+$blue: #2257ea;
+$lightgrey: #f7f7f7;
+$secondarycolor: #213059;
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background: $secondarycolor;
+  color: $lightgrey;
+}
+</style>

@@ -50,6 +50,11 @@ $blue: #2257ea;
   display: inline-block;
   z-index: 0;
 }
+@media only screen and (max-width: 500px) {
+  #about {
+    padding: 1rem;
+  }
+}
 @keyframes shake {
   from {
     transform: rotate(0deg);

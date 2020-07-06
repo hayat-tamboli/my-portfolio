@@ -41,4 +41,9 @@ $blue: #2257ea;
 .blue span {
   background-color: $blue;
 }
+@media only screen and (max-width: 500px) {
+  .progress-bar {
+    width: 20rem;
+  }
+}
 </style>

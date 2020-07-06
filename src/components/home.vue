@@ -62,6 +62,12 @@ export default {
   .text-area {
     text-align: center;
     align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .home {
+    justify-content: center;
+    padding: 0rem;
   }
 }
 </style>

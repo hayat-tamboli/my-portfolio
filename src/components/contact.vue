@@ -3,9 +3,10 @@
     <h1>Get in touch</h1>
     <h2 class="desc">
       If you wanna get in touch, talk to me about a project collaboration or
-      just say hi, fill up the awesome form below or send an email to<br />
-      <a href="mailto:hayattamboli@gmail.com">hayat.tamboli@gmail.com</a
-      ><br />and ~let's talk.
+      just say hi, fill up the awesome form below or send an email to
+      <br />
+      <a href="mailto:hayattamboli@gmail.com">hayat.tamboli@gmail.com</a>
+      <br />and ~let's talk.
     </h2>
     <form class="forms">
       <div class="text-forms">
@@ -43,6 +44,29 @@
       </button>
     </form>
     <h1>Let's get social</h1>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/hayat-tamboli/">
+        <img src="../assets/linkedin-icon.svg" width="75rem" alt="LinkedIn" />
+      </a>
+      <a href="https://www.github.com/hayat-tamboli/">
+        <img src="../assets/github-1.svg" width="75rem" alt="LinkedIn" />
+      </a>
+      <a href="https://www.facebook.com/hayat.tamboli/">
+        <img src="../assets/facebook-3.svg" width="75rem" alt="LinkedIn" />
+      </a>
+      <a href="https://www.behance.net/hayattamboli">
+        <img src="../assets/behance-1.svg" width="75rem" alt="LinkedIn" />
+      </a>
+      <a href="https://www.instagram.com/hayattamboli.work/">
+        <img src="../assets/instagram-2016.svg" width="75rem" alt="LinkedIn" />
+      </a>
+      <a href="https://stackoverflow.com/users/13782112/hayat-tamboli">
+        <img src="../assets/stack-overflow.svg" width="200rem" alt="LinkedIn" />
+      </a>
+      <a href="https://codepen.io/hayattamboli">
+        <img src="../assets/codepen.svg" width="200rem" alt="LinkedIn" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -68,7 +92,7 @@ $blue: #2257ea;
   align-items: center;
   min-height: 100vh;
   .desc {
-    padding: 0 15rem;
+    padding: 0 10rem;
     text-align: center;
     a {
       text-decoration: none;
@@ -83,6 +107,7 @@ $blue: #2257ea;
     .text-forms {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
   .form-group {
@@ -107,6 +132,27 @@ $blue: #2257ea;
       &::placeholder {
         font-family: "Poppins", sans-serif;
       }
+    }
+  }
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 2rem;
+    a {
+      margin: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .desc {
+    padding: 0 1rem;
+  }
+  .forms {
+    .text-forms {
+      flex-direction: column;
     }
   }
 }

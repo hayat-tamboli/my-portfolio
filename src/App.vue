@@ -86,4 +86,9 @@ button {
   }
   transition: all 0.2s ease-in-out;
 }
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 14px;
+  }
+}
 </style>

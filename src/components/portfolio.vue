@@ -5,21 +5,21 @@
       <CardComp
         main="memory-game"
         desc="a memory game made with vanilla JS"
-        img_source="https://picsum.photos/300?random=1"
+        img_source="https://github.com/hayat-tamboli/my-portfolio/blob/master/src/assets/memory-game.png"
         weblink="https://memory-master.netlify.com/"
         gitlink="https://github.com/hayat-tamboli/memory-game"
       ></CardComp>
       <CardComp
         main="todo-app"
         desc="a simple todo-app made with Vue.js"
-        img_source="https://picsum.photos/300?random=2"
+        img_source="https://github.com/hayat-tamboli/my-portfolio/blob/master/src/assets/Todo-app.png"
         weblink="https://todapp.vercel.app/"
         gitlink="https://github.com/hayat-tamboli/todo-app"
       ></CardComp>
       <CardComp
         main="weather-app"
         desc="weather-app using dark-sky API,made in vanilla JS"
-        img_source="https://picsum.photos/300?random=3"
+        img_source="https://github.com/hayat-tamboli/my-portfolio/blob/master/src/assets/weather-app.png"
         weblink="https://weatherforu.netlify.com/"
         gitlink="https://github.com/hayat-tamboli/weather-page"
       ></CardComp>

@@ -44,6 +44,7 @@ export default {
   background: #ffffff;
   margin: 2rem;
   border-radius: 6px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.1) inset;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);

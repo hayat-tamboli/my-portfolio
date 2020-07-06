@@ -25,8 +25,8 @@ export default {
     About,
     Portfolio,
     Skills,
-    Contact,
-  },
+    Contact
+  }
 };
 </script>
 

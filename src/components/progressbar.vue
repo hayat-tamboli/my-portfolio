@@ -22,7 +22,7 @@ $blue: #2257ea;
 .progress-bar {
   background-color: #ffffff;
   height: 20px;
-  width: 50rem;
+  width: 35rem;
   border-radius: 15px;
   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3) inset;
 }

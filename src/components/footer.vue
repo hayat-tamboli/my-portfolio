@@ -1,5 +1,10 @@
 <template>
-  <div id="footer">© Hayat Tamboli | Made with 💙 by Hayat Tamboli</div>
+  <div id="footer">
+    <a
+      href="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/LICENSE"
+      >© Hayat Tamboli </a
+    >| Made with 💙 by Hayat Tamboli
+  </div>
 </template>
 
 <script>
@@ -19,5 +24,9 @@ $secondarycolor: #213059;
   height: 15vh;
   background: $secondarycolor;
   color: $lightgrey;
+  a {
+    text-decoration: none;
+    color: $lightgrey;
+  }
 }
 </style>

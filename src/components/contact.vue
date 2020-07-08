@@ -8,7 +8,7 @@
       <a href="mailto:hayattamboli@gmail.com">hayat.tamboli@gmail.com</a>
       <br />and ~let's talk.
     </h2>
-    <form class="forms" @submit.prevent="handleSubmit">
+    <form v-if="!this.submitted" class="forms" @submit.prevent="handleSubmit">
       <div class="text-forms">
         <div class="form-group">
           <label for="name">Full Name</label>
@@ -18,6 +18,7 @@
             id="name"
             placeholder="Jhon Doe"
             v-model="feedback.name"
+            required
           />
         </div>
         <div class="form-group">
@@ -28,6 +29,7 @@
             id="E-mail"
             placeholder="somebody@example.com"
             v-model="feedback.email"
+            required
           />
         </div>
       </div>
@@ -41,6 +43,7 @@
             rows="10"
             placeholder="Your Message"
             v-model="feedback.message"
+            required
           ></textarea>
         </div>
       </div>
@@ -51,6 +54,7 @@
         Submit
       </button>
     </form>
+    <h2 v-if="this.submitted">😀 Your form has been submitted</h2>
     <h1>Let's get social</h1>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/hayat-tamboli/">
@@ -83,16 +87,28 @@ export default {
   name: "Contact",
   data() {
     return {
-      feedback:{
+      feedback: {
         name: "",
         email: "",
         message: ""
-      }
+      },
+      submitted: false
     };
   },
   methods: {
     handleSubmit() {
-      // Send data to the server or update your stores and such.
+      // Send data to the server
+      this.$http
+        .post("https://jsonplaceholder.typicode.com/posts", {
+          name: this.feedback.name,
+          email: this.feedback.email,
+          message: this.feedback.message
+        })
+        .then(function(data) {
+          console.log(data);
+        });
+      console.log("Hello world");
+      this.submitted = true;
     }
   }
 };

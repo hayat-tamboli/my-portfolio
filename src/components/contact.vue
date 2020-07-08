@@ -8,11 +8,17 @@
       <a href="mailto:hayattamboli@gmail.com">hayat.tamboli@gmail.com</a>
       <br />and ~let's talk.
     </h2>
-    <form class="forms">
+    <form class="forms" @submit.prevent="handleSubmit">
       <div class="text-forms">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" placeholder="Jhon Doe" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Jhon Doe"
+            v-model="feedback.name"
+          />
         </div>
         <div class="form-group">
           <label for="E-mail">E-mail</label>
@@ -21,6 +27,7 @@
             name="E-mail"
             id="E-mail"
             placeholder="somebody@example.com"
+            v-model="feedback.email"
           />
         </div>
       </div>
@@ -33,6 +40,7 @@
             cols="30"
             rows="10"
             placeholder="Your Message"
+            v-model="feedback.message"
           ></textarea>
         </div>
       </div>
@@ -75,10 +83,17 @@ export default {
   name: "Contact",
   data() {
     return {
-      name: "",
-      email: "",
-      message: ""
+      feedback:{
+        name: "",
+        email: "",
+        message: ""
+      }
     };
+  },
+  methods: {
+    handleSubmit() {
+      // Send data to the server or update your stores and such.
+    }
   }
 };
 </script>

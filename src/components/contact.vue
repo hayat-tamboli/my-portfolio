@@ -99,15 +99,13 @@ export default {
     handleSubmit() {
       // Send data to the server
       this.$http
-        .post("https://jsonplaceholder.typicode.com/posts", {
-          name: this.feedback.name,
-          email: this.feedback.email,
-          message: this.feedback.message
-        })
+        .post(
+          "https://my-portfolio-hayat.firebaseio.com/feedback.json",
+          this.feedback
+        )
         .then(function(data) {
-          console.log(data);
+          console.log("Hi there!😁", data);
         });
-      console.log("Hello world");
       this.submitted = true;
     }
   }

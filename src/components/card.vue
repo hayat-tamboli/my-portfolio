@@ -44,10 +44,9 @@ export default {
   background: #ffffff;
   margin: 2rem;
   border-radius: 6px;
-  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   }
   transition: all 0.2s ease-in-out;
   max-width: 300px;

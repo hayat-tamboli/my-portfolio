@@ -82,7 +82,7 @@ button {
   }
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
   }
   transition: all 0.2s ease-in-out;
 }

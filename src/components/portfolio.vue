@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolio">
+  <div id="projects">
     <h1>My Projects</h1>
     <div class="card-deck">
       <CardComp
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#portfolio {
+#projects {
   display: flex;
   justify-content: space-around;
   align-items: center;

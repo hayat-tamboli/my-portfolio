@@ -1,11 +1,11 @@
 <template>
   <div class="header">
     <span class="logo">
-      <a href="#">Hayat Tamboli</a>
+      <a href="#home">Hayat Tamboli</a>
     </span>
     <ul class="links">
       <li>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
       </li>
       <li>
         <a href="#about">About</a>

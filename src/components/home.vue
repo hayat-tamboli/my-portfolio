@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
     <div class="text-area">
       <span>
         <h1>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
+#home {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +65,7 @@ export default {
     padding: 0rem;
     margin: 0rem;
   }
-  .home {
+  #home {
     justify-content: center;
     padding: 0rem;
   }

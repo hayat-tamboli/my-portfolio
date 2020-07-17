@@ -14,7 +14,7 @@
         </h3>
       </span>
       <button style="background: #2257ea">
-        <a href="#portfolio">See my work</a>
+        <a href="#projects">See my work</a>
       </button>
     </div>
     <img

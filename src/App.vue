@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <VueScrollProgress></VueScrollProgress> -->
+    <Preloader></Preloader>
     <Header></Header>
     <Home></Home>
     <About></About>
@@ -19,6 +19,7 @@ import Portfolio from "./components/portfolio";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import Preloader from "./components/preloader";
 export default {
   name: "App",
   components: {
@@ -28,7 +29,8 @@ export default {
     Portfolio,
     Skills,
     Contact,
-    Footer
+    Footer,
+    Preloader
   }
 };
 </script>

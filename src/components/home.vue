@@ -8,7 +8,8 @@
       </span>
       <span>
         <h3>
-           I love solving problems and talking about new developments in technology and design.
+          I love solving problems and talking about new developments in
+          technology and design.
         </h3>
       </span>
       <button style="background: #2257ea">

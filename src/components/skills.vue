@@ -152,7 +152,7 @@ export default {
     padding: 1rem 2rem;
     transition: all 0.2s ease-in-out;
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
       opacity: 1;
     }
   }
@@ -162,16 +162,16 @@ export default {
     width: 20rem;
   }
 }
-@keyframes color-rotate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
+// @keyframes color-rotate {
+//   from {
+//     filter: hue-rotate(0deg);
+//   }
+//   to {
+//     filter: hue-rotate(360deg);
+//   }
+// }
 
-.skill-icons:hover {
-  animation: color-rotate 2s alternate infinite;
-}
+// .skill-icons:hover {
+//   animation: color-rotate 2s alternate infinite;
+// }
 </style>

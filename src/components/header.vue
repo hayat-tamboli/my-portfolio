@@ -117,7 +117,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @media only screen and (max-width: 900px) {
   .header {
-    width: 100vw;
+    max-width: 100vw;
     justify-content: center;
     .links {
       display: none;

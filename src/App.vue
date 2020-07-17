@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <VueScrollProgress></VueScrollProgress>
+    <!-- <VueScrollProgress></VueScrollProgress> -->
     <Header></Header>
     <Home></Home>
     <About></About>
@@ -64,6 +64,7 @@ body {
 #progress-el {
   /* progress bar */
   background-color: $blue !important;
+  max-width: 100vw;
 }
 #app {
   background: $lightgrey;

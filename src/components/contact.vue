@@ -66,8 +66,11 @@
       <a href="https://www.facebook.com/hayat.tamboli/">
         <img src="../assets/facebook-3.svg" width="75rem" alt="LinkedIn" />
       </a>
-      <a href="https://www.behance.net/hayattamboli">
+      <!-- <a href="https://www.behance.net/hayattamboli">
         <img src="../assets/behance-1.svg" width="75rem" alt="LinkedIn" />
+      </a> -->
+      <a href="https://www.dribbble.com/hayattamboli">
+        <img src="../assets/dribbble-icon-1.svg" width="75rem" alt="LinkedIn" />
       </a>
       <a href="https://www.instagram.com/hayattamboli.work/">
         <img src="../assets/instagram-2016.svg" width="75rem" alt="LinkedIn" />
@@ -120,8 +123,8 @@ $blue: #2257ea;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 0 10rem;
   .desc {
-    padding: 0 10rem;
     text-align: center;
     a {
       text-decoration: none;
@@ -167,18 +170,23 @@ $blue: #2257ea;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
     flex-wrap: wrap;
     margin: 2rem;
     a {
-      margin: 1rem;
+      padding: 1rem 2rem;
+      opacity: 0.8;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
+        opacity: 1;
+      }
     }
   }
 }
 @media only screen and (max-width: 600px) {
-  .desc {
-    padding: 0 1rem;
-  }
+  // .desc {
+  //   padding: 0 0rem;
+  // }
   .forms {
     .text-forms {
       flex-direction: column;

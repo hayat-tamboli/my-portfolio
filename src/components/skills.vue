@@ -2,20 +2,8 @@
   <div id="skills">
     <h1>Skills</h1>
     <div class="skill-div">
-      <img
-        alt
-        title="HTML5"
-        class="skill-icons"
-        src="../assets/html5.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="CSS3"
-        class="skill-icons"
-        src="../assets/css3.svg"
-        height="75rem"
-      />
+      <img alt title="HTML5" class="skill-icons" src="../assets/html5.svg" height="75rem" />
+      <img alt title="CSS3" class="skill-icons" src="../assets/css3.svg" height="75rem" />
       <img
         alt
         title="Bootstrap4"
@@ -23,48 +11,12 @@
         src="../assets/bootstrap-4.svg"
         height="75rem"
       />
-      <img
-        alt
-        title="C"
-        class="skill-icons"
-        src="../assets/C.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="C++"
-        class="skill-icons"
-        src="../assets/cpp.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Vue.js"
-        class="skill-icons"
-        src="../assets/vue-9.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Python"
-        class="skill-icons"
-        src="../assets/python-4.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Javascript"
-        class="skill-icons"
-        src="../assets/javascript.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="sass/scss"
-        class="skill-icons"
-        src="../assets/sass-1.svg"
-        height="75rem"
-      />
+      <img alt title="C" class="skill-icons" src="../assets/C.svg" height="75rem" />
+      <img alt title="C++" class="skill-icons" src="../assets/cpp.svg" height="75rem" />
+      <img alt title="Vue.js" class="skill-icons" src="../assets/vue-9.svg" height="75rem" />
+      <img alt title="Python" class="skill-icons" src="../assets/python-4.svg" height="75rem" />
+      <img alt title="Javascript" class="skill-icons" src="../assets/javascript.svg" height="75rem" />
+      <img alt title="sass/scss" class="skill-icons" src="../assets/sass-1.svg" height="75rem" />
       <img
         alt
         title="Django"
@@ -72,41 +24,11 @@
         src="../assets/django-community.svg"
         height="75rem"
       />
-      <img
-        alt
-        title="Git"
-        class="skill-icons"
-        src="../assets/git-icon.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Github"
-        class="skill-icons"
-        src="../assets/github-1.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Express"
-        class="skill-icons"
-        src="../assets/express-109.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Node.js"
-        class="skill-icons"
-        src="../assets/nodejs-icon.svg"
-        height="75rem"
-      />
-      <img
-        alt
-        title="Adobe XD"
-        class="skill-icons"
-        src="../assets/adobe-xd-1.svg"
-        height="75rem"
-      />
+      <img alt title="Git" class="skill-icons" src="../assets/git-icon.svg" height="75rem" />
+      <img alt title="Github" class="skill-icons" src="../assets/github-1.svg" height="75rem" />
+      <img alt title="Express" class="skill-icons" src="../assets/express-109.svg" height="75rem" />
+      <img alt title="Node.js" class="skill-icons" src="../assets/nodejs-icon.svg" height="75rem" />
+      <img alt title="Adobe XD" class="skill-icons" src="../assets/adobe-xd-1.svg" height="75rem" />
       <img
         alt
         title="Adobe Illustrator"
@@ -114,13 +36,7 @@
         src="../assets/adobe-illustrator-cc.svg"
         height="75rem"
       />
-      <img
-        alt
-        title="Figma"
-        class="skill-icons"
-        src="../assets/figma-1.svg"
-        height="75rem"
-      />
+      <img alt title="Figma" class="skill-icons" src="../assets/figma-1.svg" height="75rem" />
     </div>
   </div>
 </template>
@@ -158,20 +74,11 @@ export default {
   }
 }
 @media only screen and (max-width: 500px) {
-  .progress-bar {
-    width: 20rem;
+  #skills {
+    padding: 1rem 1rem;
+  }
+  .skill-icons {
+    padding: 1rem 1rem;
   }
 }
-// @keyframes color-rotate {
-//   from {
-//     filter: hue-rotate(0deg);
-//   }
-//   to {
-//     filter: hue-rotate(360deg);
-//   }
-// }
-
-// .skill-icons:hover {
-//   animation: color-rotate 2s alternate infinite;
-// }
 </style>

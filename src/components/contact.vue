@@ -55,7 +55,7 @@
       </button>
     </form>
     <h2 v-if="this.submitted">😀 Your form has been submitted</h2>
-    <h1>Let's get social</h1>
+    <h1 style="text-align: center;">Let's get social</h1>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/hayat-tamboli/">
         <img src="../assets/linkedin-icon.svg" width="75rem" alt="LinkedIn" />
@@ -123,7 +123,7 @@ $blue: #2257ea;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 0 10rem;
+  padding: 1rem 10rem;
   .desc {
     text-align: center;
     a {
@@ -171,7 +171,7 @@ $blue: #2257ea;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem;
+    margin: 2rem 0;
     a {
       padding: 1rem 2rem;
       opacity: 0.8;
@@ -184,9 +184,9 @@ $blue: #2257ea;
   }
 }
 @media only screen and (max-width: 600px) {
-  // .desc {
-  //   padding: 0 0rem;
-  // }
+  #contact {
+    padding: 1rem 1rem;
+  }
   .forms {
     .text-forms {
       flex-direction: column;

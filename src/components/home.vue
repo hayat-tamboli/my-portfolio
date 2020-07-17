@@ -3,14 +3,12 @@
     <div class="text-area">
       <span>
         <h1>
-          Stylish web
-          <br />design & development.
+          Hi, I am a UI/UX Designer & frontend developer.
         </h1>
       </span>
       <span>
         <h3>
-          I help deliver a great user experience
-          <br />that looks stylish
+           I love solving problems and talking about new developments in technology and design.
         </h3>
       </span>
       <button style="background: #2257ea">

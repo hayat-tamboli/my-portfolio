@@ -93,7 +93,7 @@
         <img src="../assets/hackerrank.svg" height="90rem" alt="hackerrank" />
       </a>
       <a href="https://codepen.io/hayattamboli">
-        <img src="../assets/codepen.svg" height="75rem" alt="codepen" />
+        <img src="../assets/codepen.svg" height="64rem" alt="codepen" />
       </a>
     </div>
   </div>

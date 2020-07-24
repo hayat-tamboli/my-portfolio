@@ -58,28 +58,42 @@
     <h1 style="text-align: center;">Let's get social</h1>
     <div class="social-links">
       <a href="https://www.linkedin.com/in/hayat-tamboli/">
-        <img src="../assets/linkedin-icon.svg" width="75rem" alt="LinkedIn" />
+        <img src="../assets/linkedin-icon.svg" height="75rem" alt="LinkedIn" />
       </a>
       <a href="https://www.github.com/hayat-tamboli/">
-        <img src="../assets/github-1.svg" width="75rem" alt="LinkedIn" />
+        <img src="../assets/github-1.svg" height="75rem" alt="github" />
       </a>
       <a href="https://www.facebook.com/hayat.tamboli/">
-        <img src="../assets/facebook-3.svg" width="75rem" alt="LinkedIn" />
+        <img src="../assets/facebook-3.svg" height="75rem" alt="facebook" />
       </a>
       <!-- <a href="https://www.behance.net/hayattamboli">
-        <img src="../assets/behance-1.svg" width="75rem" alt="LinkedIn" />
+        <img src="../assets/behance-1.svg" height="75rem" alt="LinkedIn" />
       </a> -->
       <a href="https://www.dribbble.com/hayattamboli">
-        <img src="../assets/dribbble-icon-1.svg" width="75rem" alt="LinkedIn" />
+        <img src="../assets/dribbble-icon-1.svg" height="75rem" alt="dribble" />
+      </a>
+      <a href="https://twitter.com/HayatTamboli">
+        <img src="../assets/twitter.svg" height="75rem" alt="twitter" />
       </a>
       <a href="https://www.instagram.com/hayattamboli.work/">
-        <img src="../assets/instagram-2016.svg" width="75rem" alt="LinkedIn" />
+        <img
+          src="../assets/instagram-2016.svg"
+          height="75rem"
+          alt="instagram"
+        />
       </a>
       <a href="https://stackoverflow.com/users/13782112/hayat-tamboli">
-        <img src="../assets/stack-overflow.svg" width="200rem" alt="LinkedIn" />
+        <img
+          src="../assets/stack-overflow.svg"
+          height="75rem"
+          alt="stackoverflow"
+        />
+      </a>
+      <a href="https://www.hackerrank.com/hayat_tamboli">
+        <img src="../assets/hackerrank.svg" height="90rem" alt="hackerrank" />
       </a>
       <a href="https://codepen.io/hayattamboli">
-        <img src="../assets/codepen.svg" width="200rem" alt="LinkedIn" />
+        <img src="../assets/codepen.svg" height="75rem" alt="codepen" />
       </a>
     </div>
   </div>

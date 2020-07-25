@@ -13,7 +13,11 @@
       <h5 id="description">{{ desc }}</h5>
       <div class="card-btns">
         <button class="card-btns-items" style="background: #333333 ">
-          <a :href="gitlink" style="font-size:1rem" target="_blank"
+          <a
+            rel="noreferrer"
+            :href="gitlink"
+            style="font-size:1rem"
+            target="_blank"
             >Github repo</a
           >
         </button>

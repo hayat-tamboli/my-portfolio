@@ -73,7 +73,7 @@
         <img src="../assets/dribbble-icon-1.svg" height="75rem" alt="dribble" />
       </a>
       <a rel="noreferrer" href="https://twitter.com/HayatTamboli">
-        <img src="../assets/twitter.svg" height="75rem" alt="twitter" />
+        <img src="../assets/twitter-3.svg" height="75rem" alt="twitter" />
       </a>
       <a rel="noreferrer" href="https://www.instagram.com/hayattamboli.work/">
         <img

@@ -1,6 +1,14 @@
 <template>
   <div id="app">
     <Preloader></Preloader>
+    <go-top
+      bg-color="#2257ea"
+      :has-outline="false"
+      :size="60"
+      :bottom="60"
+      :right="60"
+      box-shadow="0px 3px 10px rgba(34, 87, 234,0.3)"
+    ></go-top>
     <Header></Header>
     <Home></Home>
     <About></About>
@@ -12,6 +20,7 @@
 </template>
 
 <script>
+import GoTop from "@inotom/vue-go-top";
 import Header from "./components/header";
 import Home from "./components/home";
 import About from "./components/about";
@@ -30,7 +39,8 @@ export default {
     Skills,
     Contact,
     Footer,
-    Preloader
+    Preloader,
+    GoTop
   }
 };
 </script>

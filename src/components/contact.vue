@@ -209,5 +209,14 @@ $blue: #2257ea;
       flex-direction: column;
     }
   }
+  .social-links {
+    padding: 1rem 0rem;
+    a {
+      padding: 1rem 0rem;
+      img {
+        padding: 1rem 1rem;
+      }
+    }
+  }
 }
 </style>

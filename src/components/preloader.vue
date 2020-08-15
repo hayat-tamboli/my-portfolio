@@ -3,7 +3,7 @@
     <div v-if="show" class="preloader">
       <HollowDotsSpinner
         :animation-duration="800"
-        :dot-size="80"
+        :dot-size="60"
         :dots-num="3"
         color="#2257ea"
       />

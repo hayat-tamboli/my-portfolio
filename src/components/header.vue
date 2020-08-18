@@ -1,10 +1,10 @@
 <template>
-  <div class="header" :class="{navExpand:mobileNav}">
+  <div class="header" :class="{ navExpand: mobileNav }">
     <span class="logo">
       <a href="#home">HAYAT</a>
       <button
         class="menu"
-        :class="{opened:mobileNav }"
+        :class="{ opened: mobileNav }"
         @click="mobileNavToggle()"
         aria-label="Main Menu"
       >

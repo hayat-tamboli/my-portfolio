@@ -53,7 +53,12 @@
           ></textarea>
         </div>
       </div>
-      <button style="background: #2257ea;color:#f7f7f7;font-size: 1.2rem" type="submit">Submit</button>
+      <button
+        style="background: #2257ea;color:#f7f7f7;font-size: 1.2rem"
+        type="submit"
+      >
+        Submit
+      </button>
     </form>
     <h2 v-if="this.submitted">😀 Your form has been submitted</h2>
     <h1 style="text-align: center;">Let's get social</h1>
@@ -77,10 +82,21 @@
         <img src="../assets/twitter-3.svg" height="75rem" alt="twitter" />
       </a>
       <a rel="noreferrer" href="https://www.instagram.com/hayattamboli.work/">
-        <img src="../assets/instagram-2016.svg" height="75rem" alt="instagram" />
+        <img
+          src="../assets/instagram-2016.svg"
+          height="75rem"
+          alt="instagram"
+        />
       </a>
-      <a rel="noreferrer" href="https://stackoverflow.com/users/13782112/hayat-tamboli">
-        <img src="../assets/stack-overflow.svg" height="75rem" alt="stackoverflow" />
+      <a
+        rel="noreferrer"
+        href="https://stackoverflow.com/users/13782112/hayat-tamboli"
+      >
+        <img
+          src="../assets/stack-overflow.svg"
+          height="75rem"
+          alt="stackoverflow"
+        />
       </a>
       <a rel="noreferrer" href="https://www.hackerrank.com/hayat_tamboli">
         <img src="../assets/hackerrank.svg" height="90rem" alt="hackerrank" />

@@ -1,10 +1,11 @@
 <template>
-  <div class="header">
+  <div class="header" :class="{navExpand:mobileNav}">
     <span class="logo">
       <a href="#home">HAYAT</a>
       <button
         class="menu"
-        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        :class="{opened:mobileNav }"
+        @click="mobileNavToggle()"
         aria-label="Main Menu"
       >
         <svg width="40" height="40" viewBox="0 0 100 100">
@@ -22,19 +23,19 @@
     </span>
     <ul class="links">
       <li>
-        <a href="#home">Home</a>
+        <a href="#home" @click="mobileNavToggle()">Home</a>
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="#about" @click="mobileNavToggle()">About</a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#projects" @click="mobileNavToggle()">Projects</a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a href="#skills" @click="mobileNavToggle()">Skills</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact" @click="mobileNavToggle()">Contact</a>
       </li>
       <!-- <Switches v-model="enabled" theme="bulma" type-bold="true" color="blue"></Switches> -->
     </ul>
@@ -46,8 +47,14 @@ export default {
   name: "Header",
   data() {
     return {
-      enabled: false
+      mobileNav: false
     };
+  },
+  methods: {
+    mobileNavToggle() {
+      this.mobileNav = !this.mobileNav;
+      // this.setAttribute("aria-expanded", this.classList.contains("opened"));
+    }
   }
 };
 </script>
@@ -137,6 +144,35 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media only screen and (max-width: 900px) {
+  .links {
+    display: none;
+  }
+  .navExpand {
+    position: fixed;
+    // transition: height 10s ease-in-out;
+    height: 100vh;
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 80vh;
+      list-style-type: none;
+      margin: 0;
+      text-align: center;
+      padding: 0;
+      font-weight: 800;
+
+      li {
+        display: inline-block;
+        margin: 20px 0px;
+        transition: all 1s;
+        a {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
   button {
     &:hover {
       transform: translateY(0px);
@@ -195,9 +231,6 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       justify-content: space-between;
       align-items: center;
       padding: 0 2rem;
-    }
-    .links {
-      display: none;
     }
   }
 }

@@ -10,10 +10,10 @@
         gitlink="https://github.com/hayat-tamboli/memory-game"
       ></CardComp>
       <CardComp
-        main="todo-app"
+        main="Todone"
         desc="a simple todo-app made with Vue.js"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/Todo-app.png"
-        weblink="https://todapp.vercel.app/"
+        weblink="https://todone-minimal.vercel.app/"
         gitlink="https://github.com/hayat-tamboli/todo-app"
       ></CardComp>
       <CardComp

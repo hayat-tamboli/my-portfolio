@@ -65,11 +65,19 @@
         src="../assets/sass-1.svg"
         height="75rem"
       />
-      <img
+      <!-- <img
         alt
         title="Django"
         class="skill-icons"
         src="../assets/django-community.svg"
+        height="75rem"
+      /> -->
+
+      <img
+        alt
+        title="Flutter"
+        class="skill-icons"
+        src="../assets/flutter.svg"
         height="75rem"
       />
       <img
@@ -86,20 +94,20 @@
         src="../assets/github-1.svg"
         height="75rem"
       />
-      <img
+      <!-- <img
         alt
         title="Express"
         class="skill-icons"
         src="../assets/express-109.svg"
         height="75rem"
-      />
-      <img
+      /> -->
+      <!-- <img
         alt
         title="Node.js"
         class="skill-icons"
         src="../assets/nodejs-icon.svg"
         height="75rem"
-      />
+      /> -->
       <img
         alt
         title="Adobe XD"

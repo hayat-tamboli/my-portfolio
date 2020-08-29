@@ -69,9 +69,9 @@
       <a rel="noreferrer" href="https://www.github.com/hayat-tamboli/">
         <img src="../assets/github-1.svg" height="75rem" alt="github" />
       </a>
-      <a rel="noreferrer" href="https://www.facebook.com/hayat.tamboli/">
+      <!-- <a rel="noreferrer" href="https://www.facebook.com/hayat.tamboli/">
         <img src="../assets/facebook-3.svg" height="75rem" alt="facebook" />
-      </a>
+      </a> -->
       <!-- <a rel="noreferrer" href="https://www.behance.net/hayattamboli">
         <img src="../assets/behance-1.svg" height="75rem" alt="Behance" />
       </a>-->

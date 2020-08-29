@@ -27,6 +27,12 @@ npm install
 npm run serve
 ```
 
+## Linting
+
+```sh
+npm run lint
+```
+
 ## Author
 
 👤 **Hayat Tamboli**

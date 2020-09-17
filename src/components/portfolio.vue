@@ -4,6 +4,9 @@
     <div class="card-deck">
       <CardComp
         main="memory-game"
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-sine"
         desc="a memory game made with vanilla JS"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/memory-game.png"
         weblink="https://memory-master.netlify.com/"
@@ -12,12 +15,18 @@
       <CardComp
         main="Todone"
         desc="a simple todo-app made with Vue.js"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-easing="ease-in-sine"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/Todo-app.png"
         weblink="https://todone-minimal.vercel.app/"
         gitlink="https://github.com/hayat-tamboli/todo-app"
       ></CardComp>
       <CardComp
         main="weather-app"
+        data-aos="fade-down"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-sine"
         desc="weather-app using dark-sky API,made in vanilla JS"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/weather-app.png"
         weblink="https://weatherforu.netlify.com/"

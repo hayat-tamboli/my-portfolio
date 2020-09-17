@@ -16,7 +16,12 @@
       method="POST"
     >
       <div class="text-forms">
-        <div class="form-group">
+        <div
+          class="form-group"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-sine"
+        >
           <label for="name">Full Name</label>
           <input
             type="text"
@@ -27,7 +32,12 @@
             required
           />
         </div>
-        <div class="form-group">
+        <div
+          class="form-group"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-sine"
+        >
           <label for="E-mail">E-mail</label>
           <input
             type="email"
@@ -40,7 +50,12 @@
         </div>
       </div>
       <div>
-        <div class="form-group">
+        <div
+          class="form-group"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-sine"
+        >
           <label for="message">Message</label>
           <textarea
             name="message"

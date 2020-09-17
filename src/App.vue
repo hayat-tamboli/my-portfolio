@@ -10,6 +10,7 @@
       box-shadow="0px 3px 10px rgba(34, 87, 234,0.3)"
     ></go-top>
     <Header></Header>
+    <div style="height: 3em"></div>
     <Home></Home>
     <About></About>
     <Portfolio></Portfolio>
@@ -69,12 +70,11 @@ body {
 }
 ::selection {
   background: $blue;
-  color: #f7f7f7;
+  color: $lightgrey;
 }
 ::-webkit-scrollbar {
   width: 15px;
-  color: $lightgrey;
-  background: #213059;
+  background: $lightgrey;
 }
 ::-webkit-scrollbar-thumb {
   width: 15px;
@@ -119,5 +119,14 @@ button {
     filter: invert(1) hue-rotate(180deg);
   }
   background: #d4d4d4;
+  ::-webkit-scrollbar {
+    width: 15px;
+    background: #292929;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 15px;
+    background: $blue;
+    border-radius: 500px;
+  }
 }
 </style>

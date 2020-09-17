@@ -38,15 +38,15 @@
         <a href="#contact" @click="mobileNavToggle()">Contact</a>
       </li>
       <!-- <Switches v-model="enabled" theme="bulma" type-bold="true" color="blue"></Switches> -->
-    <div
-      class="toggle toggle--daynight invert-again"
-      style="transform: scale(0.5);"
-    >
-      <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
-      <label class="toggle--btn" for="toggle--daynight"
-        ><span class="toggle--feature"></span
-      ></label>
-    </div>
+      <div
+        class="toggle toggle--daynight invert-again"
+        style="transform: scale(0.5);"
+      >
+        <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
+        <label class="toggle--btn" for="toggle--daynight"
+          ><span class="toggle--feature"></span
+        ></label>
+      </div>
     </ul>
   </div>
 </template>
@@ -98,6 +98,8 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     list-style-type: none;
     margin: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
 
     li {
       display: inline-block;
@@ -153,8 +155,10 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media only screen and (max-width: 900px) {
-  .links {
-    display: none;
+  .header {
+    .links {
+      display: none;
+    }
   }
   .navExpand {
     position: fixed;
@@ -244,7 +248,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 }
 .toggle {
-  display: block;
+  display: inline-block;
   text-align: center;
   user-select: none;
 }
@@ -252,8 +256,8 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: none;
 }
 .toggle--btn {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin: 0;
 
   font-size: 1em;
 

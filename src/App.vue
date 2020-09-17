@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{ dark: darkMode }">
     <Preloader></Preloader>
     <go-top
       bg-color="#2257ea"
@@ -15,7 +15,7 @@
     <Portfolio></Portfolio>
     <Skills></Skills>
     <Contact></Contact>
-    <Footer></Footer>
+    <Footer class="invert-again"></Footer>
   </div>
 </template>
 
@@ -40,8 +40,13 @@ export default {
     Contact,
     Footer,
     Preloader,
-    GoTop
-  }
+    GoTop,
+  },
+  data() {
+    return {
+      darkMode: false,
+    };
+  },
 };
 </script>
 
@@ -55,12 +60,12 @@ $secondarycolor: #213059;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: $secondarycolor;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
+  background: $lightgrey;
 }
 ::selection {
   background: $blue;
@@ -69,6 +74,7 @@ body {
 ::-webkit-scrollbar {
   width: 15px;
   color: $lightgrey;
+  background: #213059;
 }
 ::-webkit-scrollbar-thumb {
   width: 15px;
@@ -79,9 +85,6 @@ body {
   /* progress bar */
   background-color: $blue !important;
   max-width: 100vw;
-}
-#app {
-  background: $lightgrey;
 }
 button {
   border: none;
@@ -105,5 +108,16 @@ button {
   :root {
     font-size: 14px;
   }
+}
+.dark {
+  transition: color 300ms, background-color 300ms;
+  filter: invert(1) hue-rotate(180deg);
+  img,
+  iframe,
+  button,
+  .invert-again {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  background: #d4d4d4;
 }
 </style>

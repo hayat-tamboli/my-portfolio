@@ -38,8 +38,8 @@ export default {
     desc: String,
     gitlink: String,
     weblink: String,
-    repo: String
-  }
+    repo: String,
+  },
 };
 </script>
 

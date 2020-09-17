@@ -8,13 +8,13 @@
         </span>
         <div>
           <ul class="flip3">
-            <li>Student👨‍🎓</li>
-            <li>Developer👨‍💻</li>
-            <li>UI/UX Designer👨‍🎨</li>
+            <li>Student <span class="invert-again">👨‍🎓</span></li>
+            <li>Developer <span class="invert-again">👨‍💻</span></li>
+            <li>UI/UX Designer <span class="invert-again">👨‍🎨</span></li>
           </ul>
         </div>
       </h1>
-      <button style="background: #2257ea">
+      <button class="invert-again" style="background: #2257ea">
         <a href="#projects">See my work</a>
       </button>
     </div>
@@ -52,7 +52,6 @@ export default {
     padding: 2rem;
     .wordCarousel {
       font-weight: 100;
-      color: #222222;
       div {
         overflow: hidden;
         position: relative;
@@ -61,7 +60,6 @@ export default {
         padding-top: 10px;
         margin-top: -10px;
         li {
-          color: #333;
           white-space: nowrap;
           font-weight: 700;
           padding: 0 10px;

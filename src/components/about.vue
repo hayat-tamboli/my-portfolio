@@ -2,7 +2,7 @@
   <div id="about">
     <h1>
       Hi, I am Hayat Tamboli
-      <span id="hi">👋</span>
+      <span id="hi" class="invert-again">👋</span>
     </h1>
     <p>
       I am a computer science undergrad from Solapur, Maharashtra. Currently I

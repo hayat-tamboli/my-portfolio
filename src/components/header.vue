@@ -1,6 +1,6 @@
 <template>
   <div class="header" :class="{ navExpand: mobileNav }">
-    <span class="logo">
+    <span class="logo invert-again">
       <a href="#home">HAYAT</a>
       <button
         class="menu"
@@ -38,6 +38,15 @@
         <a href="#contact" @click="mobileNavToggle()">Contact</a>
       </li>
       <!-- <Switches v-model="enabled" theme="bulma" type-bold="true" color="blue"></Switches> -->
+    <div
+      class="toggle toggle--daynight invert-again"
+      style="transform: scale(0.5);"
+    >
+      <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
+      <label class="toggle--btn" for="toggle--daynight"
+        ><span class="toggle--feature"></span
+      ></label>
+    </div>
     </ul>
   </div>
 </template>
@@ -47,15 +56,15 @@ export default {
   name: "Header",
   data() {
     return {
-      mobileNav: false
+      mobileNav: false,
     };
   },
   methods: {
     mobileNavToggle() {
       this.mobileNav = !this.mobileNav;
       // this.setAttribute("aria-expanded", this.classList.contains("opened"));
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -231,6 +240,219 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       justify-content: space-between;
       align-items: center;
       padding: 0 2rem;
+    }
+  }
+}
+.toggle {
+  display: block;
+  text-align: center;
+  user-select: none;
+}
+.toggle--checkbox {
+  display: none;
+}
+.toggle--btn {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 1em;
+
+  transition: all 350ms ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggle--btn,
+.toggle--checkbox,
+.toggle--feature {
+  &,
+  &:before,
+  &:after {
+    transition: all 250ms ease-in;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+/* ===================================================
+   Day/Night and Gender toggle buttons
+   =================================================== */
+
+$toggleHeight: 70px;
+$toggleWidth: 125px;
+$borderWidth: 5px;
+$toggleBtnRadius: $toggleHeight - 14px;
+
+$bgColor--night: #3c4145;
+$borderColor--night: #1c1c1c;
+$toggleBtn-bgColor--night: #fff;
+$toggleBtn-borderColor--night: #e3e3c7;
+
+$bgColor--day: #9ee3fb;
+$borderColor--day: #86c3d7;
+$toggleBtn-bgColor--day: #ffdf6d;
+$toggleBtn-borderColor--day: #e1c348;
+
+$cloud-borderColor: #d3d3d3;
+$cloud-bgColor: #fff;
+
+.toggle--daynight,
+.toggle--like {
+  .toggle--btn {
+    position: relative;
+    height: $toggleHeight;
+    width: $toggleWidth;
+    border-radius: $toggleHeight;
+
+    //toggle button
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      width: $toggleBtnRadius;
+      height: $toggleBtnRadius;
+      border-radius: 50%;
+    }
+  }
+}
+
+.toggle--daynight {
+  .toggle--btn {
+    border: $borderWidth solid $borderColor--night;
+    background-color: $bgColor--night;
+
+    //toggle button
+    &:before {
+      background-color: $toggleBtn-bgColor--night;
+      border: $borderWidth solid $toggleBtn-borderColor--night;
+    }
+    &:after {
+      position: absolute;
+      top: 62%;
+      left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 20px;
+      z-index: 10;
+      width: $toggleBtnRadius / 5;
+      height: $toggleBtnRadius / 5;
+      opacity: 0;
+      background-color: $cloud-bgColor;
+      border-radius: 50%;
+
+      //crazy ass box-shadow to make the cloud
+      box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0, $cloud-bgColor 6px 0,
+        $cloud-bgColor 9px 0, $cloud-bgColor 11px 0, $cloud-bgColor 14px 0,
+        $cloud-bgColor 16px 0, $cloud-bgColor 21px -1px 0 1px,
+        $cloud-bgColor 16px -7px 0 -2px, $cloud-bgColor 7px -7px 0 1px,
+        $cloud-borderColor 0 0 0 4px, $cloud-borderColor 6px 0 0 4px,
+        $cloud-borderColor 11px 0 0 4px, $cloud-borderColor 16px 0 0 4px,
+        $cloud-borderColor 21px -1px 0 5px, $cloud-borderColor 16px -7px 0 1px,
+        $cloud-borderColor 7px -7px 0 5px;
+
+      transition: opacity 100ms ease-in;
+    }
+  }
+
+  @keyframes starry_star {
+    50% {
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: #fff 30px -3px 0 0, #fff 12px 10px 0 -1px,
+        rgba(255, 255, 255, 0.1) 38px 18px 0 1px, #fff 32px 34px 0 0,
+        rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px, #fff 5px 38px 0 1px;
+    }
+  }
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 100;
+      transform: scale(1.1);
+    }
+    55% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 100;
+      transform: scale(1);
+    }
+  }
+  //stars
+  .toggle--feature {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 52.5%;
+    z-index: 20;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 0,
+      rgba(255, 255, 255, 0.1) 12px 10px 0 -1px, #fff 38px 18px 0 1px,
+      rgba(255, 255, 255, 0.1) 32px 34px 0 0, #fff 20px 24px 0 -1.5px,
+      rgba(255, 255, 255, 0.1) 5px 38px 0 1px;
+
+    animation: starry_star 5s ease-in-out infinite;
+
+    &:before {
+      position: absolute;
+      top: -2px;
+      left: -25px;
+      width: 18px;
+      height: 18px;
+      background-color: $toggleBtn-bgColor--night;
+      border-radius: 50%;
+      border: 5px solid $toggleBtn-borderColor--night;
+
+      box-shadow: $toggleBtn-borderColor--night -28px 0 0 -3px,
+        $toggleBtn-borderColor--night -8px 24px 0 -2px;
+
+      transform-origin: -6px 130%;
+    }
+  }
+
+  //what happens once checkbox is checked
+  .toggle--checkbox:checked {
+    & + .toggle--btn {
+      background-color: $bgColor--day;
+      border: $borderWidth solid $borderColor--day;
+
+      &:before {
+        left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 4px;
+        background-color: $toggleBtn-bgColor--day;
+        border: $borderWidth solid $toggleBtn-borderColor--day;
+      }
+      &:after {
+        opacity: 100;
+        animation-name: bounceIn;
+        animation-duration: 0.6s;
+        animation-delay: 0.1s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+      }
+
+      > .toggle--feature {
+        opacity: 0;
+        box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px,
+          rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, #fff 38px 18px 0 -3px,
+          rgba(255, 255, 255, 0.1) 32px 34px 0 -4px, #fff 20px 24px 0 -5.5px,
+          rgba(255, 255, 255, 0.1) 5px 38px 0 -3px;
+        animation: none;
+
+        &:before {
+          left: 25px;
+          transform: rotate(70deg);
+        }
+      }
     }
   }
 }

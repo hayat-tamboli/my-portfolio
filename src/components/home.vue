@@ -1,26 +1,29 @@
 <template>
   <div id="home">
     <div class="text-area">
-      <span>
-        <h1>
-          Hi, I am a UI/UX Designer & frontend developer.
-        </h1>
-      </span>
-      <span>
-        <h3>
-          I love solving problems and talking about new developments in
-          technology and design.
-        </h3>
-      </span>
+      <h1 class="wordCarousel">
+        <span>
+          Hi I am Hayat Tamboli,
+          <br />I am a
+        </span>
+        <div>
+          <ul class="flip3">
+            <li>Student👨‍🎓</li>
+            <li>Developer👨‍💻</li>
+            <li>UI/UX Designer👨‍🎨</li>
+          </ul>
+        </div>
+      </h1>
       <button style="background: #2257ea">
         <a href="#projects">See my work</a>
       </button>
     </div>
     <img
-      src="../assets/undraw_web_developer_p3e5.svg"
+      src="../assets/app_development_SVG.svg"
       alt="web developer"
       id="web-dev-img"
-      width="50%"
+      width="35%"
+      style="padding: 2rem;"
     />
   </div>
 </template>
@@ -46,12 +49,28 @@ export default {
     font-size: 1.4rem;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 3rem;
-  }
-  .svg {
-    position: absolute;
-    right: 3rem;
-    top: 8rem;
+    padding: 2rem;
+    .wordCarousel {
+      font-weight: 100;
+      color: #222222;
+      div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 70px;
+        padding-top: 10px;
+        margin-top: -10px;
+        li {
+          color: #333;
+          white-space: nowrap;
+          font-weight: 700;
+          padding: 0 10px;
+          height: 45px;
+          margin-bottom: 45px;
+          display: block;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 900px) {
@@ -67,6 +86,38 @@ export default {
   #home {
     justify-content: center;
     padding: 0rem;
+  }
+}
+
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  padding-inline-start: 0;
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
   }
 }
 </style>

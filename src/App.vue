@@ -63,7 +63,8 @@ body {
   padding: 0;
 }
 ::selection {
-  color: $blue;
+  background: $blue;
+  color: #f7f7f7;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -72,6 +73,7 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 15px;
   background: $blue;
+  border-radius: 500px;
 }
 #progress-el {
   /* progress bar */

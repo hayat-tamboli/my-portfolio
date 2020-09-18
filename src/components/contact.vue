@@ -11,10 +11,10 @@
     <form
       v-if="!this.submitted"
       class="forms"
-      @submit.prevent="handleSubmit"
       action="https://formspree.io/xqkyjjvv"
       method="POST"
     >
+      <!-- @submit.prevent="handleSubmit" -->
       <div class="text-forms">
         <div
           class="form-group"
@@ -76,7 +76,9 @@
       </button>
     </form>
     <h2 v-if="this.submitted">😀 Your form has been submitted</h2>
+
     <h1 style="text-align: center;">Let's get social</h1>
+
     <div class="social-links">
       <a rel="noreferrer" href="https://www.linkedin.com/in/hayat-tamboli/">
         <img src="../assets/linkedin-icon.svg" height="75rem" alt="LinkedIn" />
@@ -135,21 +137,21 @@ export default {
       },
       submitted: false
     };
-  },
-  methods: {
-    handleSubmit() {
-      // Send data to the server
-      this.$http
-        .post(
-          "https://my-portfolio-hayat.firebaseio.com/feedback.json",
-          this.feedback
-        )
-        .then(function(data) {
-          console.log("Hi there!😁", data);
-        });
-      this.submitted = true;
-    }
   }
+  // methods: {
+  //   handleSubmit() {
+  //     // Send data to the server
+  //     this.$http
+  //       .post(
+  //         "https://my-portfolio-hayat.firebaseio.com/feedback.json",
+  //         this.feedback
+  //       )
+  //       .then(function(data) {
+  //         console.log("Hi there!😁", data);
+  //       });
+  //     this.submitted = true;
+  //   }
+  // }
 };
 </script>
 

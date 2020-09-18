@@ -1,6 +1,6 @@
 <template>
   <div class="header" :class="{ navExpand: mobileNav }">
-    <span class="logo invert-again">
+    <span class="logo">
       <a href="#home">HAYAT</a>
       <button
         class="menu"
@@ -37,12 +37,16 @@
       <li>
         <a href="#contact" @click="mobileNavToggle()">Contact</a>
       </li>
-      <!-- <Switches v-model="enabled" theme="bulma" type-bold="true" color="blue"></Switches> -->
       <div
         class="toggle toggle--daynight invert-again"
         style="transform: scale(0.5);"
       >
-        <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
+        <input
+          type="checkbox"
+          @change="$emit('dark-mode')"
+          id="toggle--daynight"
+          class="toggle--checkbox"
+        />
         <label class="toggle--btn" for="toggle--daynight"
           ><span class="toggle--feature"></span
         ></label>
@@ -56,15 +60,14 @@ export default {
   name: "Header",
   data() {
     return {
-      mobileNav: false,
+      mobileNav: false
     };
   },
   methods: {
-    mobileNavToggle() {
+    mobileNavToggle: function() {
       this.mobileNav = !this.mobileNav;
-      // this.setAttribute("aria-expanded", this.classList.contains("opened"));
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -82,7 +85,6 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 1rem 0rem;
   align-items: center;
   background: #f7f7f785;
   backdrop-filter: blur(8px);
@@ -162,7 +164,6 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .navExpand {
     position: fixed;
-    // transition: height 10s ease-in-out;
     height: 100vh;
     .links {
       display: flex;
@@ -305,26 +306,6 @@ $toggleBtn-borderColor--day: #e1c348;
 $cloud-borderColor: #d3d3d3;
 $cloud-bgColor: #fff;
 
-.toggle--daynight,
-.toggle--like {
-  .toggle--btn {
-    position: relative;
-    height: $toggleHeight;
-    width: $toggleWidth;
-    border-radius: $toggleHeight;
-
-    //toggle button
-    &:before {
-      position: absolute;
-      top: 2px;
-      left: 4px;
-      width: $toggleBtnRadius;
-      height: $toggleBtnRadius;
-      border-radius: 50%;
-    }
-  }
-}
-
 .toggle--daynight {
   .toggle--btn {
     border: $borderWidth solid $borderColor--night;
@@ -457,6 +438,26 @@ $cloud-bgColor: #fff;
           transform: rotate(70deg);
         }
       }
+    }
+  }
+}
+
+.toggle--daynight,
+.toggle--like {
+  .toggle--btn {
+    position: relative;
+    height: $toggleHeight;
+    width: $toggleWidth;
+    border-radius: $toggleHeight;
+
+    //toggle button
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      width: $toggleBtnRadius;
+      height: $toggleBtnRadius;
+      border-radius: 50%;
     }
   }
 }

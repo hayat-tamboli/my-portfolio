@@ -33,13 +33,13 @@
         gitlink="https://github.com/hayat-tamboli/weather-page"
       ></CardComp>
     </div>
-    <h2>Design Projects</h2>
+    <!-- <h2>Design Projects</h2>
     <iframe
       height="812"
       src="https://xd.adobe.com/embed/94f928d5-ae2f-4def-8fc8-0b3d7db66514-c1aa/"
       frameborder="0"
       allowfullscreen
-    ></iframe>
+    ></iframe> -->
   </div>
 </template>
 

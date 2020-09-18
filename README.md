@@ -1,8 +1,5 @@
 <h1 align="center">Welcome to my-portfolio 👋</h1>
 <p>
-  <a href="https://www.npmjs.com/package/my-portfolio" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/my-portfolio.svg">
-  </a>
   <a href="https://github.com/hayat-tamboli/my-portfolio/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>

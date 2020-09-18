@@ -1,58 +1,14 @@
 <template>
-  <div id="app" :class="{ dark: darkMode }">
-    <Preloader></Preloader>
-    <go-top
-      bg-color="#2257ea"
-      :has-outline="false"
-      :size="60"
-      :bottom="60"
-      :right="60"
-      box-shadow="0px 3px 10px rgba(34, 87, 234,0.3)"
-    ></go-top>
-    <Header></Header>
-    <div style="height: 3em"></div>
-    <Home></Home>
-    <About></About>
-    <Portfolio></Portfolio>
-    <Skills></Skills>
-    <Contact></Contact>
-    <Footer class="invert-again"></Footer>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
-<script>
-import GoTop from "@inotom/vue-go-top";
-import Header from "./components/header";
-import Home from "./components/home";
-import About from "./components/about";
-import Portfolio from "./components/portfolio";
-import Skills from "./components/skills";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import Preloader from "./components/preloader";
-export default {
-  name: "App",
-  components: {
-    Header,
-    Home,
-    About,
-    Portfolio,
-    Skills,
-    Contact,
-    Footer,
-    Preloader,
-    GoTop,
-  },
-  data() {
-    return {
-      darkMode: false,
-    };
-  },
-};
-</script>
-
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: Poppins;
+  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+}
 $blue: #2257ea;
 $lightgrey: #f7f7f7;
 $secondarycolor: #213059;
@@ -111,15 +67,22 @@ button {
 }
 .dark {
   transition: color 300ms, background-color 300ms;
-  filter: invert(1) hue-rotate(180deg);
-  img,
-  iframe,
-  button,
-  .invert-again {
-    filter: invert(1) hue-rotate(180deg);
+  background: #292929;
+  color: #f7f7f7;
+  .header {
+    background: #29292985 !important;
+    .links a {
+      color: white !important;
+    }
   }
-  background: #d4d4d4;
-  ::-webkit-scrollbar {
+  .card {
+    background: #000000 !important;
+  }
+  .forms input,
+  textarea {
+    background: #333 !important;
+  }
+  :root::-webkit-scrollbar {
     width: 15px;
     background: #292929;
   }

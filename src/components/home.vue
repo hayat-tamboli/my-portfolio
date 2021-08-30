@@ -4,6 +4,7 @@
       Hayat Tamboli <br />
       Product designer
     </h1>
+    <img src="../assets/Hayat signature logo.png" width="90%" />
   </div>
 </template>
 <script>
@@ -24,6 +25,8 @@ export default {
   // width: 100vw;
   h1 {
     font-size: 80px;
+    position: absolute;
+    left: 300px;
   }
   background-color: #eef2fc;
 }
@@ -33,6 +36,7 @@ export default {
     padding: 1rem;
     h1 {
       font-size: 40px;
+      left: 16px;
     }
     height: 60vh;
   }

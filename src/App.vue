@@ -10,7 +10,7 @@
   src: url("../src/assets/fonts/KumbhSans-Regular.ttf");
 }
 $blue: #2c60e6;
-$lightgrey: #f7f7f7;
+$lightgrey: #fefeff;
 $secondarycolor: #213059;
 :root {
   margin: 0;

@@ -1,7 +1,8 @@
 <template>
   <div id="about">
     <p>
-      A computer science engineering undergrad based in Solapur, India.
+      A computer science engineering undergrad based in
+      <a href="https://goo.gl/maps/vFGXcTgVsPQdwpo38">Solapur, India.</a>
       Passionate about UX/UI design and frontend development
     </p>
   </div>
@@ -22,8 +23,7 @@ $blue: #2c60e6;
   justify-content: space-around;
   align-items: center;
   font-size: 1.8rem;
-  padding: 1rem 320px;
-  min-height: 100vh;
+  padding: 4rem 300px;
   p {
     a {
       text-decoration: none;

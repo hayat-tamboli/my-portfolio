@@ -2,7 +2,9 @@
   <div class="header" :class="{ navExpand: mobileNav }">
     <div class="content">
       <span class="logo">
-        <a href="#home">HAYAT</a>
+        <a href="#home">
+          HAYAT
+        </a>
         <button
           class="menu"
           :class="{ opened: mobileNav }"

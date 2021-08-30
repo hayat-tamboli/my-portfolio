@@ -5,6 +5,8 @@
         <a href="#home">
           HAYAT
         </a>
+        <span class="under-construction">🚧 Under construction</span>
+        <div></div>
         <button
           class="menu"
           :class="{ opened: mobileNav }"
@@ -26,9 +28,9 @@
       </span>
 
       <ul class="links">
-        <li>
+        <!-- <li>
           <a href="#projects" @click="mobileNavToggle()">Work</a>
-        </li>
+        </li> -->
         <li>
           <a href="#about" @click="mobileNavToggle()">About</a>
         </li>
@@ -80,6 +82,14 @@ $secondarycolor: #213059;
 $duration: 0.2s;
 $distance: 8px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.under-construction {
+  padding: 16px;
+  color: white;
+  background: #2c60e6;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
 .header {
   position: sticky;
   padding: 24px 64px 24px 64px;
@@ -119,9 +129,12 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     font-size: 1.1rem;
     position: relative;
     text-decoration: none;
-    padding-bottom: 8px;
     color: $secondarycolor;
     font-weight: 600;
+    transition: all 0.2s ease-in;
+  }
+  a:hover {
+    color: grey;
   }
 }
 .menu {

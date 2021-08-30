@@ -5,7 +5,7 @@
       <CardComp
         main="memory-game"
         data-aos="fade-down"
-        data-aos-delay="100"
+        data-aos-delay="0"
         data-aos-easing="ease-in-sine"
         desc="a memory game made with vanilla JS"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/memory-game.png"
@@ -16,7 +16,7 @@
         main="Todone"
         desc="a simple todo-app made with Vue.js"
         data-aos="fade-down"
-        data-aos-delay="200"
+        data-aos-delay="100"
         data-aos-easing="ease-in-sine"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/Todo-app.png"
         weblink="https://todone-minimal.vercel.app/"
@@ -25,7 +25,7 @@
       <CardComp
         main="weather-app"
         data-aos="fade-down"
-        data-aos-delay="300"
+        data-aos-delay="200"
         data-aos-easing="ease-in-sine"
         desc="weather-app using dark-sky API,made in vanilla JS"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/weather-app.png"

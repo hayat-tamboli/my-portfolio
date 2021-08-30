@@ -76,52 +76,6 @@
       </button>
     </form>
     <h2 v-if="this.submitted">😀 Your form has been submitted</h2>
-
-    <h1 style="text-align: center;">Let's get social</h1>
-
-    <div class="social-links">
-      <a rel="noreferrer" href="https://www.linkedin.com/in/hayat-tamboli/">
-        <img src="../assets/linkedin-icon.svg" height="75rem" alt="LinkedIn" />
-      </a>
-      <a rel="noreferrer" href="https://www.github.com/hayat-tamboli/">
-        <img src="../assets/github-1.svg" height="75rem" alt="github" />
-      </a>
-      <!-- <a rel="noreferrer" href="https://www.facebook.com/hayat.tamboli/">
-        <img src="../assets/facebook-3.svg" height="75rem" alt="facebook" />
-      </a> -->
-      <!-- <a rel="noreferrer" href="https://www.behance.net/hayattamboli">
-        <img src="../assets/behance-1.svg" height="75rem" alt="Behance" />
-      </a>-->
-      <a rel="noreferrer" href="https://www.dribbble.com/hayattamboli">
-        <img src="../assets/dribbble-icon-1.svg" height="75rem" alt="dribble" />
-      </a>
-      <a rel="noreferrer" href="https://twitter.com/HayatTamboli">
-        <img src="../assets/twitter-3.svg" height="75rem" alt="twitter" />
-      </a>
-      <a rel="noreferrer" href="https://www.instagram.com/hayattamboli.work/">
-        <img
-          src="../assets/instagram-2016.svg"
-          height="75rem"
-          alt="instagram"
-        />
-      </a>
-      <a
-        rel="noreferrer"
-        href="https://stackoverflow.com/users/13782112/hayat-tamboli"
-      >
-        <img
-          src="../assets/stack-overflow.svg"
-          height="75rem"
-          alt="stackoverflow"
-        />
-      </a>
-      <a rel="noreferrer" href="https://www.hackerrank.com/hayat_tamboli">
-        <img src="../assets/hackerrank.svg" height="90rem" alt="hackerrank" />
-      </a>
-      <a rel="noreferrer" href="https://codepen.io/hayattamboli">
-        <img src="../assets/codepen.svg" height="64rem" alt="codepen" />
-      </a>
-    </div>
   </div>
 </template>
 
@@ -133,11 +87,11 @@ export default {
       feedback: {
         name: "",
         email: "",
-        message: ""
+        message: "",
       },
-      submitted: false
+      submitted: false,
     };
-  }
+  },
   // methods: {
   //   handleSubmit() {
   //     // Send data to the server
@@ -156,7 +110,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue: #2257ea;
+$blue: #2c60e6;
 #contact {
   display: flex;
   flex-direction: column;

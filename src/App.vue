@@ -6,17 +6,17 @@
 
 <style lang="scss">
 @font-face {
-  font-family: Poppins;
-  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+  font-family: KumbhSans;
+  src: url("../src/assets/fonts/KumbhSans-Regular.ttf");
 }
-$blue: #2257ea;
+$blue: #2c60e6;
 $lightgrey: #f7f7f7;
 $secondarycolor: #213059;
 :root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "KumbhSans", sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -35,7 +35,6 @@ body {
 ::-webkit-scrollbar-thumb {
   width: 15px;
   background: $blue;
-  border-radius: 500px;
 }
 #progress-el {
   /* progress bar */

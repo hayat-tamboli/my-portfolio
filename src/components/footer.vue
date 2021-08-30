@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue: #2257ea;
+$blue: #2c60e6;
 $lightgrey: #f7f7f7;
 $secondarycolor: #213059;
 #footer {

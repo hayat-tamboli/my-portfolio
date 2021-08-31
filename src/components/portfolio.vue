@@ -13,6 +13,19 @@
           weblink="https://bootcamp.uxdesign.cc/case-study-inventory-management-for-medical-stores-690ad67b9bf7"
         ></CardComp>
       </div>
+      <div v-tilt="{ perspective: 2500 }" class="singleCard">
+        <CardComp
+          main="Creating a new platform to connect sports enthusiasts"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          :tagsArr="RunbhumiTags"
+          desc="Coming soon"
+          img_source="https://cdn.dribbble.com/users/5732576/screenshots/14169220/media/98eb7a8e7cf77160ac832e8473190039.png"
+          weblink=""
+          backcolor="background: #D6EFF0"
+          headcolor="color: #00ADB5"
+        ></CardComp>
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +40,12 @@ export default {
   data: function() {
     return {
       InventoryMgmtTags: ["🎨UX/UI", "💻Web design", "💊Medtech"],
+      RunbhumiTags: [
+        "📃UX research",
+        "🧠Design thinking",
+        "📱App design",
+        "👥Social media",
+      ],
     };
   },
 };

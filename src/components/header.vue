@@ -37,6 +37,14 @@
         <li>
           <a href="#contact" @click="mobileNavToggle()">Contact</a>
         </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1x_uM27oRfGrswvB2EFfuGhJanDQAsa78/view?usp=sharing"
+            @click="mobileNavToggle()"
+            target="_blank"
+            >Resume</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -69,7 +77,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 16px;
   color: white;
   background: #2c60e6;
-  border-radius: 16px;
+  border-radius: 0.5rem;
   font-size: 16px;
   font-weight: 700;
 }

@@ -53,9 +53,15 @@ $blue: #2c60e6;
       color: #6c707a;
       font-size: 1.2rem;
       font-weight: 600;
-      background-color: #eef2fc;
+      background-color: #eef2fc00;
       padding: 16px;
-      border-radius: 16px;
+      // border-radius: 16px;
+      border-radius: 0.5rem;
+      transition: all 0.3s;
+      &:hover {
+        background-color: #eef2fc;
+        color: #000000;
+      }
       span {
         margin-top: 6px;
       }

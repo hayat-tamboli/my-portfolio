@@ -43,7 +43,7 @@ body {
   max-width: 100vw;
 }
 .btn {
-  border-radius: 16px;
+  // border-radius: 16px;
   display: flex;
   align-items: center;
   padding: 0.8rem;
@@ -89,7 +89,7 @@ body {
   ::-webkit-scrollbar-thumb {
     width: 15px;
     background: $blue;
-    border-radius: 500px;
+    // border-radius: 500px;
   }
 }
 </style>

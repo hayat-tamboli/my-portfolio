@@ -3,9 +3,9 @@
     <div class="content">
       <span class="logo">
         <a href="#home">
-          HAYAT
+          Hayat Tamboli
         </a>
-        <span class="under-construction">🚧 Under construction</span>
+        <span class="under-construction">🚧WIP</span>
         <div></div>
         <button
           class="menu"
@@ -34,32 +34,16 @@
         <!-- <li>
           <a href="#about" @click="mobileNavToggle()">About</a>
         </li> -->
-        <!-- <li>
-          <a href="#contact" @click="mobileNavToggle()">Contact</a>
-        </li> -->
-        <!-- <li>
-          <a href="https://twitter.com/HayatTamboli"
-            ><twitter-icon size="1.2x" class="custom-class"></twitter-icon
-          ></a>
-        </li>
         <li>
-          <a href="https://dribbble.com/hayattamboli"
-            ><dribbble-icon size="1.2x" class="custom-class"></dribbble-icon
-          ></a>
-        </li> -->
+          <a href="#contact" @click="mobileNavToggle()">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-// import { TwitterIcon, DribbbleIcon } from "vue-feather-icons";
-
 export default {
-  // components: {
-  //   TwitterIcon,
-  //   DribbbleIcon,
-  // },
   name: "Header",
   data() {
     return {

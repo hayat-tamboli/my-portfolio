@@ -4,7 +4,7 @@
     <LandingPage></LandingPage>
     <Description></Description>
     <Portfolio></Portfolio>
-    <!-- <Contact></Contact> -->
+    <Contact></Contact>
     <hr />
     <Footer></Footer>
   </div>
@@ -16,7 +16,7 @@ import LandingPage from "@/components/hero.vue";
 import Header from "@/components/header.vue";
 import Description from "@/components/desc.vue";
 import Portfolio from "@/components/portfolio.vue";
-// import Contact from "@/components/contact.vue";
+import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer.vue";
 
 export default {
@@ -26,7 +26,7 @@ export default {
     Header,
     Description,
     Portfolio,
-    // Contact,
+    Contact,
     Footer,
   },
   data() {

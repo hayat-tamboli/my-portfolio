@@ -1,9 +1,26 @@
 <template>
   <div id="footer">
-    <instagram-icon size="1.5x" class="custom-class"></instagram-icon>
-    <linkedin-icon size="1.5x" class="custom-class"></linkedin-icon>
-    <github-icon size="1.5x" class="custom-class"></github-icon>
-    <twitter-icon size="1.5x" class="custom-class"></twitter-icon>
+    <a
+      class="instagram"
+      href="https://www.instagram.com/hayattamboli/"
+      target="_blank"
+      ><instagram-icon size="1.5x" class="custom-class"></instagram-icon
+    ></a>
+    <a
+      class="linkedin"
+      href="https://linkedin.com/in/hayat-tamboli"
+      target="_blank"
+      ><linkedin-icon size="1.5x" class="custom-class"></linkedin-icon
+    ></a>
+    <a class="github" href="https://github.com/hayat-tamboli" target="_blank"
+      ><github-icon size="1.5x" class="custom-class"></github-icon
+    ></a>
+    <a class="twitter" href="https://twitter.com/HayatTamboli" target="_blank"
+      ><twitter-icon size="1.5x" class="custom-class"></twitter-icon
+    ></a>
+    <a class="dribbble" href="https://dribbble.com/hayattamboli" target="_blank"
+      ><dribbble-icon size="1.5x" class="custom-class"></dribbble-icon
+    ></a>
   </div>
 </template>
 
@@ -13,6 +30,7 @@ import {
   LinkedinIcon,
   GithubIcon,
   TwitterIcon,
+  DribbbleIcon,
 } from "vue-feather-icons";
 export default {
   name: "Footer",
@@ -21,6 +39,7 @@ export default {
     LinkedinIcon,
     GithubIcon,
     TwitterIcon,
+    DribbbleIcon,
   },
 };
 </script>
@@ -33,8 +52,48 @@ $secondarycolor: #213059;
   display: flex;
   justify-content: center;
   align-items: center;
+  .instagram {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #8a3ab9;
+    }
+  }
+  .linkedin {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #0e76a8;
+    }
+  }
+  .github {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #000;
+    }
+  }
+  .twitter {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #1da1f2;
+    }
+  }
+  .dribbble {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #ea4c89;
+    }
+  }
   .custom-class {
-    margin: 24px;
+    margin: 16px;
   }
 }
 </style>

@@ -2,7 +2,7 @@
   <div id="projects">
     <h1>My Projects</h1>
     <div class="card-deck">
-      <div v-tilt class="singleCard">
+      <div v-tilt="{ perspective: 2500 }" class="singleCard">
         <CardComp
           main="Building an inventory management system"
           data-aos="fade-down"
@@ -36,29 +36,30 @@ export default {
 #projects {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  padding: 64px;
   flex-direction: column;
   h1 {
     margin-bottom: 0;
   }
   .card-deck {
-    padding: 16px 64px;
+    // padding: 16px 64px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     flex-wrap: wrap;
     .singleCard {
       display: flex;
-      justify-content: center;
+      justify-content: stretch;
       align-items: center;
     }
   }
 }
 @media only screen and (max-width: 800px) {
   #projects {
+    padding: 16px;
     .card-deck {
-      padding: 16px;
+      padding: 0;
     }
   }
 }

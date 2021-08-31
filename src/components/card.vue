@@ -51,9 +51,9 @@ img {
   margin: 1rem;
   border-radius: 24px;
   transition: all 0.2s ease-in-out;
-  width: 80%;
+  // width: 80%;
   text-decoration: none;
-  color: #000000;;
+  color: #000000;
   // transform-style: preserve-3d;
   #description {
     margin: 8px 0px;

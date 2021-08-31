@@ -1,15 +1,27 @@
 <template>
   <div id="footer">
-    <a
-      href="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/LICENSE"
-      >© Hayat Tamboli </a
-    >| Made with 💙 by Hayat Tamboli
+    <instagram-icon size="1.5x" class="custom-class"></instagram-icon>
+    <linkedin-icon size="1.5x" class="custom-class"></linkedin-icon>
+    <github-icon size="1.5x" class="custom-class"></github-icon>
+    <twitter-icon size="1.5x" class="custom-class"></twitter-icon>
   </div>
 </template>
 
 <script>
+import {
+  InstagramIcon,
+  LinkedinIcon,
+  GithubIcon,
+  TwitterIcon,
+} from "vue-feather-icons";
 export default {
-  name: "Footer"
+  name: "Footer",
+  components: {
+    InstagramIcon,
+    LinkedinIcon,
+    GithubIcon,
+    TwitterIcon,
+  },
 };
 </script>
 
@@ -21,12 +33,8 @@ $secondarycolor: #213059;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  background: $secondarycolor;
-  color: $lightgrey;
-  a {
-    text-decoration: none;
-    color: $lightgrey;
+  .custom-class {
+    margin: 24px;
   }
 }
 </style>

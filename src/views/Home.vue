@@ -5,6 +5,7 @@
     <Description></Description>
     <Portfolio></Portfolio>
     <!-- <Contact></Contact> -->
+    <hr />
     <Footer></Footer>
   </div>
 </template>

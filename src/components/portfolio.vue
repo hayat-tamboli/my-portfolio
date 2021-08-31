@@ -2,15 +2,17 @@
   <div id="projects">
     <h1>My Projects</h1>
     <div class="card-deck">
-      <CardComp
-        main="Building an inventory management system"
-        data-aos="fade-down"
-        data-aos-easing="ease-in-sine"
-        :tagsArr="InventoryMgmtTags"
-        desc="Designed a product experience for pharmacists to keep an easy check of the medicine inventory and also speed up the process of managing it."
-        img_source="https://cdn.dribbble.com/users/5732576/screenshots/15867006/media/50cec76714d5aec354e4cbf6619d423a.png"
-        weblink="https://bootcamp.uxdesign.cc/case-study-inventory-management-for-medical-stores-690ad67b9bf7"
-      ></CardComp>
+      <div v-tilt class="singleCard">
+        <CardComp
+          main="Building an inventory management system"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          :tagsArr="InventoryMgmtTags"
+          desc="Designed a product experience for pharmacists to keep an easy check of the medicine inventory and also speed up the process of managing it."
+          img_source="https://cdn.dribbble.com/users/5732576/screenshots/15867006/media/50cec76714d5aec354e4cbf6619d423a.png"
+          weblink="https://bootcamp.uxdesign.cc/case-study-inventory-management-for-medical-stores-690ad67b9bf7"
+        ></CardComp>
+      </div>
     </div>
   </div>
 </template>
@@ -46,6 +48,18 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    .singleCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #projects {
+    .card-deck {
+      padding: 16px;
+    }
   }
 }
 </style>

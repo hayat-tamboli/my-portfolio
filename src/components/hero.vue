@@ -38,7 +38,7 @@ export default {
       font-size: 40px;
       left: 16px;
     }
-    height: 60vh;
+    height: 70vh;
   }
 }
 </style>

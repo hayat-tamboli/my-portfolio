@@ -14,7 +14,8 @@
     "vue-feather-icons": "^5.1.0",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.2.0",
-    "vue-scroll-progress": "^1.1.2"
+    "vue-scroll-progress": "^1.1.2",
+    "vue-tilt.js": "^1.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

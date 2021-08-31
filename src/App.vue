@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   background: $lightgrey;
+  overflow-x: hidden;
 }
 ::selection {
   background: $blue;

@@ -31,13 +31,13 @@
         <li>
           <a href="#projects" @click="mobileNavToggle()">Work</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="#about" @click="mobileNavToggle()">About</a>
-        </li>
+        </li> -->
         <!-- <li>
           <a href="#contact" @click="mobileNavToggle()">Contact</a>
         </li> -->
-        <li>
+        <!-- <li>
           <a href="https://twitter.com/HayatTamboli"
             ><twitter-icon size="1.2x" class="custom-class"></twitter-icon
           ></a>
@@ -46,21 +46,20 @@
           <a href="https://dribbble.com/hayattamboli"
             ><dribbble-icon size="1.2x" class="custom-class"></dribbble-icon
           ></a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-import { TwitterIcon } from "vue-feather-icons";
-import { DribbbleIcon } from "vue-feather-icons";
+// import { TwitterIcon, DribbbleIcon } from "vue-feather-icons";
 
 export default {
-  components: {
-    TwitterIcon,
-    DribbbleIcon,
-  },
+  // components: {
+  //   TwitterIcon,
+  //   DribbbleIcon,
+  // },
   name: "Header",
   data() {
     return {

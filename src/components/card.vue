@@ -1,8 +1,8 @@
 <template>
-  <div class="card">
+  <a :href="weblink" class="card" target="_blank">
     <img :src="img_source" alt style="border-radius: 24px" />
     <div class="card-content">
-      <h1>{{ main }}</h1>
+      <h2>{{ main }}</h2>
       <div class="tags">
         <div class="single-tag" v-for="tags in tagsArr" :key="tags">
           {{ tags }}
@@ -17,7 +17,7 @@
         ></arrow-right-circle-icon>
       </a>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -46,15 +46,18 @@ img {
   width: 500px;
 }
 .card {
-  background: #ffffff;
+  background: #ebe8fb;
   display: flex;
   margin: 1rem;
   border-radius: 24px;
   transition: all 0.2s ease-in-out;
   width: 80%;
+  text-decoration: none;
+  color: #000000;;
+  // transform-style: preserve-3d;
   #description {
     margin: 8px 0px;
-    color: #626369;
+    color: #000000ad;
     font-weight: 500;
   }
 }
@@ -63,18 +66,21 @@ img {
   justify-content: center;
   flex-direction: column;
   padding-left: 1rem;
-  h1 {
+  h2 {
     margin: 0;
   }
   .tags {
+    transform: translateZ(20px);
     display: flex;
     .single-tag {
-      background-color: #eef2fc;
+      // background-color: #eef2fc;
+      background-color: #ffffff96;
       border-radius: 50px;
       padding: 8px 16px;
       width: fit-content;
       margin-right: 8px;
       font-size: 0.8rem;
+      font-weight: 600;
     }
   }
   .card-btns {
@@ -85,6 +91,21 @@ img {
       margin: 0 0.5rem;
       color: #f7f7f7;
     }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  img {
+    width: 300px;
+  }
+  .card {
+    flex-direction: column;
+    width: 100%;
+    .card-content {
+      padding: 1rem;
+    }
+  }
+  .btn {
+    display: none;
   }
 }
 </style>

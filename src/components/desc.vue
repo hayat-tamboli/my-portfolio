@@ -1,11 +1,11 @@
 <template>
   <div id="desc">
-    <p>
+    <p data-aos="fade-down" data-aos-easing="ease-in-sine">
       A computer science engineering undergrad based in
       <a href="https://goo.gl/maps/vFGXcTgVsPQdwpo38">Solapur, India.</a>
       Passionate about UX/UI design and frontend development
     </p>
-    <p>
+    <p data-aos="fade-down" data-aos-easing="ease-in-sine">
       Currently working as a UX design intern at
       <a
         href="http://www.linkedin.com/company/engineer-s-cradle/"
@@ -80,6 +80,11 @@ $blue: #2c60e6;
   display: inline-block;
   z-index: 0;
 }
+@media only screen and (max-width: 1000px) {
+  #desc {
+    padding: 4rem 16px;
+  }
+}
 @media only screen and (max-width: 500px) {
   #about {
     padding: 1rem;
@@ -93,4 +98,5 @@ $blue: #2c60e6;
     transform: rotate(20deg);
   }
 }
+
 </style>

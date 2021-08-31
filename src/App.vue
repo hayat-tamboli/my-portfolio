@@ -41,21 +41,21 @@ body {
   background-color: $blue !important;
   max-width: 100vw;
 }
-button {
-  border: none;
-  border-radius: 6px;
-  margin: 0.5rem 0;
-  padding: 0.5rem 18px;
+.btn {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
   outline: none;
   width: fit-content;
-  a {
-    color: $lightgrey;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
+  font: "KumbhSans";
+  background-color: #333;
+  color: $lightgrey;
+  text-decoration: none;
+  font-size: 1rem;
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: $blue;
+    color: $lightgrey;
   }
   transition: all 0.2s ease-in-out;
 }

@@ -3,43 +3,31 @@
     <h1>My Projects</h1>
     <div class="card-deck">
       <CardComp
-        main="memory-game"
+        main="Inventory Management For Medical Stores"
         data-aos="fade-down"
-        data-aos-delay="0"
         data-aos-easing="ease-in-sine"
-        desc="a memory game made with vanilla JS"
-        img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/memory-game.png"
-        weblink="https://memory-master.netlify.com/"
-        gitlink="https://github.com/hayat-tamboli/memory-game"
+        :tagsArr="InventoryMgmtTags"
+        desc="Designed a product experience for pharmacist to keep an easy check of the medicine inventory and also speed up the process of managing it."
+        img_source="https://cdn.dribbble.com/users/5732576/screenshots/15867006/media/50cec76714d5aec354e4cbf6619d423a.png"
+        weblink="https://bootcamp.uxdesign.cc/case-study-inventory-management-for-medical-stores-690ad67b9bf7"
       ></CardComp>
-      <CardComp
+      <!-- <CardComp
         main="Todone"
         desc="a simple todo-app made with Vue.js"
         data-aos="fade-down"
-        data-aos-delay="100"
         data-aos-easing="ease-in-sine"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/Todo-app.png"
         weblink="https://todone-minimal.vercel.app/"
-        gitlink="https://github.com/hayat-tamboli/todo-app"
       ></CardComp>
       <CardComp
         main="weather-app"
         data-aos="fade-down"
-        data-aos-delay="200"
         data-aos-easing="ease-in-sine"
         desc="weather-app using dark-sky API,made in vanilla JS"
         img_source="https://raw.githubusercontent.com/hayat-tamboli/my-portfolio/master/src/assets/weather-app.png"
         weblink="https://weatherforu.netlify.com/"
-        gitlink="https://github.com/hayat-tamboli/weather-page"
-      ></CardComp>
+      ></CardComp> -->
     </div>
-    <!-- <h2>Design Projects</h2>
-    <iframe
-      height="812"
-      src="https://xd.adobe.com/embed/94f928d5-ae2f-4def-8fc8-0b3d7db66514-c1aa/"
-      frameborder="0"
-      allowfullscreen
-    ></iframe> -->
   </div>
 </template>
 
@@ -48,8 +36,13 @@ import CardComp from "./card";
 export default {
   name: "Portfolio",
   components: {
-    CardComp
-  }
+    CardComp,
+  },
+  data: function() {
+    return {
+      InventoryMgmtTags: ["🎨UX/UI", "💻Web design", "💊Medtech"],
+    };
+  },
 };
 </script>
 
@@ -59,9 +52,13 @@ export default {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  h1 {
+    margin-bottom: 0;
+  }
   .card-deck {
+    padding: 16px 64px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

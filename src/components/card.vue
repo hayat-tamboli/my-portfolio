@@ -1,69 +1,81 @@
 <template>
   <div class="card">
-    <div class="img">
-      <img
-        :src="img_source"
-        alt
-        style="border-radius: 6px 6px 0 0"
-        width="300px"
-      />
-    </div>
-    <div class="card-text">
-      <h2>{{ main }}</h2>
-      <h5 id="description">{{ desc }}</h5>
-      <div class="card-btns">
-        <button class="card-btns-items" style="background: #333333 ">
-          <a
-            rel="noreferrer"
-            :href="gitlink"
-            style="font-size:1rem"
-            target="_blank"
-            >Github repo</a
-          >
-        </button>
-        <button class="card-btns-items" style="background: #2257ea ">
-          <a :href="weblink" style="font-size:1rem" target="_blank">website</a>
-        </button>
+    <img :src="img_source" alt style="border-radius: 24px" />
+    <div class="card-content">
+      <h1>{{ main }}</h1>
+      <div class="tags">
+        <div class="single-tag" v-for="tags in tagsArr" :key="tags">
+          {{ tags }}
+        </div>
       </div>
+      <h4 id="description">{{ desc }}</h4>
+      <a class="btn" :href="weblink" target="_blank">
+        Read the case study
+        <arrow-right-circle-icon
+          size="1.2x"
+          class="custom-class"
+        ></arrow-right-circle-icon>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
+import { ArrowRightCircleIcon } from "vue-feather-icons";
 export default {
   name: "CardComp",
   props: {
     img_source: String,
     main: String,
     desc: String,
-    gitlink: String,
     weblink: String,
-    repo: String
-  }
+    repo: String,
+    tagsArr: Array,
+  },
+  components: {
+    ArrowRightCircleIcon,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.custom-class {
+  margin-left: 8px;
+}
+img {
+  width: 500px;
+}
 .card {
   background: #ffffff;
-  margin: 2rem;
-  border-radius: 6px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-  &:hover {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-  }
+  display: flex;
+  margin: 1rem;
+  border-radius: 24px;
   transition: all 0.2s ease-in-out;
-  max-width: 300px;
+  width: 80%;
+  #description {
+    margin: 8px 0px;
+    color: #626369;
+    font-weight: 500;
+  }
 }
-.card-text {
+.card-content {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 0 1rem 1rem 1rem;
-  #description {
-    max-width: 180px;
-    text-align: center;
+  padding-left: 1rem;
+  h1 {
+    margin: 0;
+  }
+  .tags {
+    display: flex;
+    .single-tag {
+      background-color: #eef2fc;
+      border-radius: 50px;
+      padding: 8px 16px;
+      width: fit-content;
+      margin-right: 8px;
+      font-size: 0.8rem;
+    }
   }
   .card-btns {
     display: flex;

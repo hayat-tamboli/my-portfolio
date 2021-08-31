@@ -3,8 +3,8 @@
     <Header @dark-mode="darkMode = !darkMode"></Header>
     <LandingPage></LandingPage>
     <About></About>
-    <!-- <Portfolio></Portfolio> -->
-    <Contact></Contact>
+    <Portfolio></Portfolio>
+    <!-- <Contact></Contact> -->
     <Footer></Footer>
   </div>
 </template>
@@ -14,8 +14,8 @@
 import LandingPage from "@/components/home.vue";
 import Header from "@/components/header.vue";
 import About from "@/components/about.vue";
-// import Portfolio from "@/components/portfolio.vue";
-import Contact from "@/components/contact.vue";
+import Portfolio from "@/components/portfolio.vue";
+// import Contact from "@/components/contact.vue";
 import Footer from "@/components/footer.vue";
 
 export default {
@@ -24,8 +24,8 @@ export default {
     LandingPage,
     Header,
     About,
-    // Portfolio,
-    Contact,
+    Portfolio,
+    // Contact,
     Footer,
   },
   data() {

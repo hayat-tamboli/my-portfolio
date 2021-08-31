@@ -1,15 +1,22 @@
 <template>
-  <div id="about">
+  <div id="desc">
     <p>
       A computer science engineering undergrad based in
       <a href="https://goo.gl/maps/vFGXcTgVsPQdwpo38">Solapur, India.</a>
       Passionate about UX/UI design and frontend development
     </p>
     <p>
-      Worked, mentored & lead as a designer in several diffrent companies and
-      organisations
+      Currently working as a UX design intern at
+      <a
+        href="http://www.linkedin.com/company/engineer-s-cradle/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Engineer's Cradle</a
+      >
+      - a mission driven early stage startup, focused on helping engineers get
+      better oppotunities & resources.
     </p>
-    <div class="companies">
+    <!-- <div class="companies">
       <a href="https://cubevit-e1c09.web.app/"
         ><img src="../assets/cube vit logo.png" alt="cube vit"
       /></a>
@@ -22,13 +29,13 @@
       <a href="https://www.linkedin.com/company/engineer-s-cradle/"
         ><img src="../assets/Engineer’s Cradle Logo.png" alt="Engineers cradle"
       /></a>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: "Desccription",
 };
 </script>
 
@@ -51,7 +58,7 @@ $blue: #2c60e6;
     }
   }
 }
-#about {
+#desc {
   display: flex;
   flex-direction: column;
   justify-content: space-around;

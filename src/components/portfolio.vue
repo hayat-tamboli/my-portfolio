@@ -1,6 +1,6 @@
 <template>
   <div id="projects">
-    <h1>My Projects</h1>
+    <h1>Recent work</h1>
     <div class="card-deck">
       <div v-tilt="{ perspective: 2500 }" class="singleCard">
         <CardComp

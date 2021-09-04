@@ -48,13 +48,16 @@ export default {
 $blue: #2c60e6;
 $lightgrey: #f7f7f7;
 $secondarycolor: #213059;
+$grey: #686868;
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 128px;
+  background-color: #000;
   .instagram {
     text-decoration: none;
-    color: #4d4d4d;
+    color: $grey;
     transition: all 0.3s ease-in;
     &:hover {
       color: #8a3ab9;
@@ -62,7 +65,7 @@ $secondarycolor: #213059;
   }
   .linkedin {
     text-decoration: none;
-    color: #4d4d4d;
+    color: $grey;
     transition: all 0.3s ease-in;
     &:hover {
       color: #0e76a8;
@@ -70,15 +73,15 @@ $secondarycolor: #213059;
   }
   .github {
     text-decoration: none;
-    color: #4d4d4d;
+    color: $grey;
     transition: all 0.3s ease-in;
     &:hover {
-      color: #000;
+      color: #fff;
     }
   }
   .twitter {
     text-decoration: none;
-    color: #4d4d4d;
+    color: $grey;
     transition: all 0.3s ease-in;
     &:hover {
       color: #1da1f2;
@@ -86,7 +89,7 @@ $secondarycolor: #213059;
   }
   .dribbble {
     text-decoration: none;
-    color: #4d4d4d;
+    color: $grey;
     transition: all 0.3s ease-in;
     &:hover {
       color: #ea4c89;

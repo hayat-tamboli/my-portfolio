@@ -4,22 +4,22 @@
     <div class="card-deck">
       <div v-tilt="{ perspective: 2500 }" class="singleCard">
         <CardComp
-          main="Building an inventory management system"
+          main="Medicotary"
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           :tagsArr="InventoryMgmtTags"
-          desc="Designed a product experience for pharmacists to keep an easy check of the medicine inventory and also speed up the process of managing it."
+          desc="Building an inventory management system"
           img_source="https://cdn.dribbble.com/users/5732576/screenshots/15867006/media/50cec76714d5aec354e4cbf6619d423a.png"
           weblink="https://bootcamp.uxdesign.cc/case-study-inventory-management-for-medical-stores-690ad67b9bf7"
         ></CardComp>
       </div>
       <div v-tilt="{ perspective: 2500 }" class="singleCard">
         <CardComp
-          main="Creating a new platform to connect sports enthusiasts"
+          main="Runbhumi"
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           :tagsArr="RunbhumiTags"
-          desc="Coming soon"
+          desc="Creating a new platform to connect sports enthusiasts"
           img_source="https://cdn.dribbble.com/users/5732576/screenshots/14169220/media/98eb7a8e7cf77160ac832e8473190039.png"
           weblink=""
           backcolor="background: #D6EFF0"
@@ -54,24 +54,12 @@ export default {
 <style lang="scss" scoped>
 #projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: stretch;
+  align-items: stretch;
   padding: 64px;
   flex-direction: column;
   h1 {
-    margin-bottom: 0;
-  }
-  .card-deck {
-    // padding: 16px 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    flex-wrap: wrap;
-    .singleCard {
-      display: flex;
-      justify-content: stretch;
-      align-items: center;
-    }
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 800px) {

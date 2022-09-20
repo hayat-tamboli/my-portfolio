@@ -12,7 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.12",
     "vue-feather-icons": "^5.1.0",
-    "vue-resource": "^1.5.1",
+    "vue-resource": "^1.5.3",
     "vue-router": "^3.2.0",
     "vue-scroll-progress": "^1.1.2",
     "vue-tilt.js": "^1.1.1"
